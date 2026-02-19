@@ -19,32 +19,41 @@
       <nav class="nav">
         <button class="nav__btn" data-jump="home">Home</button>
         <button class="nav__btn" data-jump="about">About</button>
-        <button class="nav__btn" data-jump="portfolio">Portfolio</button>
+        <button class="nav__btn" data-jump="featured">Featured</button>
+        <button class="nav__btn" data-jump="library">Samples</button>
         <button class="nav__btn" data-jump="skills">Skills</button>
         <button class="nav__btn" data-jump="contact">Contact</button>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
   <main>
+    <!-- HERO -->
     <section id="home" class="section hero">
       <div class="wrap hero__grid">
         <div>
-          <span class="pill pill--inline">Instructional Designer</span><span class="pill pill--secondary">Engagement Specialist</span>
+          <span class="pill pill--inline">Instructional Designer</span>
+          <span class="pill pill--secondary">Learning Strategy</span>
+          <span class="pill pill--secondary">Engagement</span>
 
           <h1 class="hero__title">Krisztina Lévai</h1>
-          <p class="hero__subtitle">Learning Strategy, Campaigns &amp; Community Growth</p>
+          <p class="hero__subtitle">Learning Strategy + Hands-on Production</p>
 
           <p class="hero__lead">
-            Operating at the intersection of education, brand management, and marketing.
-            Proven ability to own complex initiatives end-to-end: from shaping vision and defining
-            success metrics, to execution, cross-functional coordination, and optimization.
+            Operating at the intersection of education, brand, and marketing—owning initiatives end-to-end:
+            defining success metrics, aligning stakeholders, building learning assets, and optimizing outcomes.
           </p>
 
-          <button class="btn" data-jump="portfolio" aria-label="View My Work">
-            <span>View My Work</span> →
-          </button>
+          <div class="hero__ctaRow">
+            <button class="btn" data-jump="featured" aria-label="View Featured Projects">
+              <span>View Featured Projects</span> →
+            </button>
+
+            <!-- CV download (replace path + filename) -->
+            <button class="btn" onclick="window.open('assets/Krisztina_Levai_CV.pdf', '_blank')">
+              Download CV
+            </button>
+          </div>
         </div>
 
         <div class="photo" aria-label="Profile image">
@@ -58,23 +67,21 @@
       <div class="wrap">
         <h2 class="section__title">About Me</h2>
         <p class="section__note">
-          A short snapshot of how I work: strategy-first, learner-centered, and optimized for measurable outcomes.
+          Strategy-first, learner-centered, and optimized for measurable outcomes—while staying hands-on in production.
         </p>
 
         <div class="about__grid">
           <div class="about__text">
             <p>
-              I’m an Instructional Designer with a strong focus on learning strategy, engagement,
-              and community growth. I operate at the intersection of education, brand management,
-              and marketing, bringing a unique perspective to learning initiatives.
+              I’m an Instructional Designer who thrives in hybrid roles: I shape learning strategy and also build the assets.
+              I work across Marketing, Legal, Design, and Product to move initiatives from idea to launch.
             </p>
             <p>
-              I have proven ability to own complex initiatives end-to-end: from shaping vision and
-              defining success metrics, to execution, cross-functional coordination, and optimization.
+              My approach blends learner research, clear success metrics, and iterative delivery. I’m comfortable owning
+              complex projects end-to-end—from planning and stakeholder alignment to execution and optimization.
             </p>
             <p>
-              I’m comfortable working across Marketing, Legal, Design, Product, and external vendors,
-              while balancing creative direction, operational rigor, and data-informed decision making.
+              I enjoy creating engaging, scalable learning experiences through courses, videos, visuals, and lightweight web components.
             </p>
           </div>
 
@@ -108,85 +115,154 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="section">
+    <!-- FEATURED PROJECTS -->
+    <section id="featured" class="section">
       <div class="wrap">
-        <h2 class="section__title">Portfolio</h2>
+        <h2 class="section__title">Featured Projects</h2>
         <p class="section__note">
-          Key projects demonstrating expertise in learning strategy, campaign management, and instructional design.
+          Case studies that highlight my hybrid approach: strategic ownership + hands-on execution.
         </p>
 
         <div class="cards3">
           <article class="card">
             <div class="card__media">
-              <img src="assets/images/project1.jpg" alt="Project 1 cover" />
+              <img src="assets/5th anniversary thumbnail.png" alt="ABBYY University 5th Anniversary Campaign cover" />
               <div class="badgeIcon">🎓</div>
             </div>
             <div class="card__body">
               <div class="meta">ABBYY • 2025</div>
-              <h3>ABBYY University 5th Anniversary Campaign</h3>
+              <h3>ABBYY University 5<sup>th</sup> Anniversary Campaign</h3>
               <p>
-                Led end-to-end campaign: vision, strategy, creative direction, and execution across cross-functional partners.
+                Led end-to-end campaign: positioning, creative direction, cross-functional execution, and launch.
               </p>
+
+              
+
               <div class="chips">
-                <span class="chip">Campaign Management</span>
+                <span class="chip">Campaign Strategy</span>
                 <span class="chip">Stakeholder Mgmt</span>
                 <span class="chip">Budget Planning</span>
                 <span class="chip">Community Growth</span>
               </div>
+              <div class="card__actions">
+                <button class="btn" onclick="window.location.href='case-studies/product-education.html'">
+                  Read case study →
+                </button>
             </div>
+            
           </article>
 
           <article class="card">
             <div class="card__media">
-              <img src="assets/images/project2.jpg" alt="Project 2 cover" />
+              <img src="https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="LinkedIn Analytics & Engagement Strategy cover" />
               <div class="badgeIcon">📈</div>
             </div>
             <div class="card__body">
               <div class="meta">ABBYY • 2025</div>
               <h3>LinkedIn Analytics &amp; Engagement Strategy</h3>
               <p>
-                Introduced post-level analytics for the first time to enable clear performance tracking and optimize interaction.
+                Introduced post-level analytics and a repeatable engagement framework to improve performance visibility.
               </p>
+
               <div class="chips">
                 <span class="chip">Analytics</span>
-                <span class="chip">Social Media</span>
                 <span class="chip">Community</span>
-                <span class="chip">Data-Driven</span>
+                <span class="chip">Experimentation</span>
+                <span class="chip">Reporting</span>
               </div>
+               <div class="card__actions">
+                <button class="btn" onclick="window.location.href='case-studies/product-education.html'">
+                  Read case study →
+                </button>
             </div>
+            
           </article>
 
           <article class="card">
             <div class="card__media">
-              <img src="assets/images/project3.jpg" alt="Project 3 cover" />
+              <img src="https://images.unsplash.com/photo-1476357471311-43c0db9fb2b4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flagship Product Education Redesign cover" />
               <div class="badgeIcon">📘</div>
             </div>
             <div class="card__body">
               <div class="meta">ABBYY • 2024–2025</div>
               <h3>Flagship Product Education Redesign</h3>
               <p>
-                Redesigned product education experiences, aligning content with product realities and marketing messaging.
+                Rebuilt the learning experience to align with product realities, marketing messaging, and learner journeys.
               </p>
+
+              
+
               <div class="chips">
                 <span class="chip">Course Design</span>
                 <span class="chip">Content Strategy</span>
                 <span class="chip">Brand Alignment</span>
                 <span class="chip">ADDIE</span>
               </div>
+              <div class="card__actions">
+                <button class="btn" onclick="window.location.href='case-studies/product-education.html'">
+                  Read case study →
+                </button>
+              </div>
             </div>
           </article>
         </div>
-
       </div>
     </section>
+
+    <!-- WORK SAMPLE LIBRARY (in-page carousel + filters) -->
+<section id="library" class="section">
+  <div class="wrap">
+    <h2 class="section__title">Work Sample Library</h2>
+    <p class="section__note">
+      Browse videos, visuals, and code samples. Use filters to narrow by type or skill.
+    </p>
+
+    <!-- Filters -->
+    <div class="libraryToolbar" aria-label="Work sample filters">
+      <div class="libraryFilters">
+        <button class="filterBtn is-active" type="button" data-filter-type="all">All</button>
+        <button class="filterBtn" type="button" data-filter-type="video">Videos</button>
+        <button class="filterBtn" type="button" data-filter-type="visual">Visuals</button>
+        <button class="filterBtn" type="button" data-filter-type="code">Code</button>
+      </div>
+
+      <!-- Skill pills (multi-select) -->
+      <div class="librarySkillFilters" aria-label="Skill filters">
+        <button class="chip chip--filter" type="button" data-filter-skill="SCORM">SCORM</button>
+        <button class="chip chip--filter" type="button" data-filter-skill="Camtasia">Camtasia</button>
+        <button class="chip chip--filter" type="button" data-filter-skill="Storyline">Storyline</button>
+        <button class="chip chip--filter" type="button" data-filter-skill="Analytics">Analytics</button>
+        <button class="chip chip--filter" type="button" data-filter-skill="HTML/CSS">HTML/CSS</button>
+        <button class="chip chip--filter" type="button" data-filter-skill="JavaScript">JavaScript</button>
+
+        <button class="filterClear" type="button" data-filter-clear>
+          Clear filters
+        </button>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel" aria-label="Work samples carousel">
+      <button class="carousel__nav" type="button" data-carousel-prev aria-label="Previous samples">←</button>
+
+      <div class="carousel__track" id="samplesTrack" tabindex="0" aria-label="Samples">
+        <!-- JS will render cards here -->
+      </div>
+
+      <button class="carousel__nav" type="button" data-carousel-next aria-label="Next samples">→</button>
+    </div>
+
+    <p class="libraryMeta" id="samplesMeta" aria-live="polite"></p>
+  </div>
+</section>
+
 
     <!-- SKILLS -->
     <section id="skills" class="section">
       <div class="wrap">
         <h2 class="section__title">Skills &amp; Expertise</h2>
         <p class="section__note">
-          Comprehensive skill set spanning instructional design, campaign strategy, and technical delivery.
+          Hybrid skill set spanning learning strategy, execution, and technical delivery.
         </p>
 
         <div class="skillsGrid">
@@ -195,10 +271,10 @@
               <div class="iconBox">▦</div>
               <div>
                 <h3>Instructional Design</h3>
-                <p>Applying learning theory and models to design effective learning experiences.</p>
+                <p>Designing structured learning experiences aligned with business objectives.</p>
               </div>
             </div>
-            <div class="subLabel">Tools &amp; technologies:</div>
+            <div class="subLabel">Models &amp; methods:</div>
             <div class="chips">
               <span class="chip">ADDIE</span><span class="chip">SAM</span><span class="chip">Bloom’s</span>
               <span class="chip">Microlearning</span><span class="chip">Scenario-Based</span>
@@ -213,7 +289,7 @@
                 <p>Rapid development for responsive and accessible courses.</p>
               </div>
             </div>
-            <div class="subLabel">Tools &amp; technologies:</div>
+            <div class="subLabel">Tools:</div>
             <div class="chips">
               <span class="chip">Articulate Rise</span><span class="chip">Storyline</span><span class="chip">Camtasia</span>
               <span class="chip">Interactive Video</span>
@@ -225,10 +301,10 @@
               <div class="iconBox">🎞</div>
               <div>
                 <h3>Video &amp; Visual Production</h3>
-                <p>Creating engaging video content and visual assets for learning.</p>
+                <p>Producing engaging video content and visual assets for learning.</p>
               </div>
             </div>
-            <div class="subLabel">Tools &amp; technologies:</div>
+            <div class="subLabel">Tools:</div>
             <div class="chips">
               <span class="chip">Camtasia</span><span class="chip">Synthesia</span><span class="chip">Photoshop</span>
               <span class="chip">After Effects</span>
@@ -243,7 +319,7 @@
                 <p>Planning and running high-visibility learning initiatives.</p>
               </div>
             </div>
-            <div class="subLabel">Tools &amp; technologies:</div>
+            <div class="subLabel">Focus areas:</div>
             <div class="chips">
               <span class="chip">Planning</span><span class="chip">Budget Mgmt</span><span class="chip">Analytics</span>
               <span class="chip">Community Growth</span>
@@ -258,7 +334,7 @@
                 <p>Managing learning platforms and ensuring smooth delivery.</p>
               </div>
             </div>
-            <div class="subLabel">Tools &amp; technologies:</div>
+            <div class="subLabel">Tools &amp; standards:</div>
             <div class="chips">
               <span class="chip">NetExam</span><span class="chip">SAP SuccessFactors</span><span class="chip">SCORM</span>
               <span class="chip">Localization</span>
@@ -270,10 +346,10 @@
               <div class="iconBox">👥</div>
               <div>
                 <h3>Stakeholder Collaboration</h3>
-                <p>Working across Marketing, Legal, Design, Product teams and vendors.</p>
+                <p>Aligning Marketing, Legal, Design, Product and vendors to ship quality work.</p>
               </div>
             </div>
-            <div class="subLabel">Tools &amp; technologies:</div>
+            <div class="subLabel">Strengths:</div>
             <div class="chips">
               <span class="chip">Cross-Functional</span><span class="chip">Iteration</span><span class="chip">Vendor Mgmt</span>
               <span class="chip">Data-Informed</span>
@@ -289,7 +365,7 @@
       <div class="wrap">
         <h2 class="section__title">Let’s Work Together</h2>
         <p class="section__note">
-          I’m always interested in new opportunities and collaborations. Get in touch!
+          I’m open to freelance projects, full-time roles, and consulting engagements. Let’s talk.
         </p>
 
         <div class="contactCard">
@@ -311,10 +387,10 @@
             </div>
 
             <div class="contactItem">
-              <div class="iconBox">☎</div>
+              <div class="iconBox">⬇</div>
               <div>
-                <p class="label">Phone</p>
-                <p class="value">+36 …</p>
+                <p class="label">CV</p>
+                <p class="value"><a href="assets/Krisztina_Levai_CV.pdf" download>Download PDF</a></p>
               </div>
             </div>
 
